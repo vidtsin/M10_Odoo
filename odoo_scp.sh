@@ -1,4 +1,8 @@
-#!/usr/bin/env bashç
+#!/usr/bin/env bash
 
-scp -r addons/* odoo@192.168.10.10:~/odoo-11.0/
-ssh god@192.168.10.10 sudo service odoo start
+echo "start"
+scp -r addons/* odoo@192.168.10.10:~/odoo-11.0/addons/
+echo "copied"
+ssh odoo@192.168.10.10 killall python3
+ssh odoo@192.168.10.10 /home/odoo/odoo-11.0/odoo-bin &
+echo "end"
