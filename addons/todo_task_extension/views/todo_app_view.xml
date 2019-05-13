@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_form_todo_task_extension" model="ir.ui.view">
+            <field name="name">To-do Task Form</field>
+            <field name="model">todo.task</field>
+            <field name="inherit_id" ref="todo_task.view_form_todo_task"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="deadline"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_tree_todo_task_extension" model="ir.ui.view">
+            <field name="name">To-do Task Tree</field>
+            <field name="model">todo.task</field>
+            <field name="inherit_id" ref="todo_task.view_tree_todo_task"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="deadline"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>
