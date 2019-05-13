@@ -27,12 +27,14 @@
                         <group name="group_top">
                             <group name="group_left">
                                 <field name="name"/>
-                                <field name="user_assigned"/>
                             </group>
                             <group name="group_right">
                                 <field name="is_done"/>
                                 <field name="active" readonly="1" />
                             </group>
+                        </group>
+                        <group name="group_bottom">
+                            <field name="user_assigned"/>
                         </group>
                     </sheet>
                 </form>
@@ -45,8 +47,8 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
-                    <field name="user_assigned"/>
                     <field name="is_done"/>
+                    <field name="user_assigned"/>
                 </tree>
             </field>
         </record>
