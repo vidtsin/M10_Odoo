@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': "Todo Task",
+    'name': "Todo app",
     'author': "Óscar García",
     'version': "0.1",
-    'description': "Todo Task",
+    'description': "Todo app",
     'data': [
-        "views/todo_task_view.xml",
+        "views/todo_app_view.xml",
     ],
     "depends": ["base"],
     'installable': True,
