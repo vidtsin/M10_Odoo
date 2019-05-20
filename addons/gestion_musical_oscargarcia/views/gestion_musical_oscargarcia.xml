@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <!--Author Tree view-->
+        <record id="author_view_tree_extension" model="ir.ui.view">
+            <field name="name">author.tree</field>
+            <field name="model">author</field>
+            <field name="inherit_id" ref="gestion_musical.author_view_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="lugar_nacimiento"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!--Author Form view-->
+        <record id="author_view_form_extension" model="ir.ui.view">
+            <field name="name">author.form</field>
+            <field name="model">author</field>
+            <field name="inherit_id" ref="gestion_musical.author_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="lugar_nacimiento"/>
+                </xpath>
+            </field>
+        </record>
+
+
+        <!--Disc Tree view-->
+        <record id="discos_view_tree_extension" model="ir.ui.view">
+            <field name="name">author.tree</field>
+            <field name="model">disc</field>
+            <field name="inherit_id" ref="gestion_musical.discos_view_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="genero"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!--Disc Form view-->
+        <record id="discos_view_form_extension" model="ir.ui.view">
+            <field name="name">author.form</field>
+            <field name="model">disc</field>
+            <field name="inherit_id" ref="gestion_musical.discos_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="genero"/>
+                </xpath>
+            </field>
+        </record>
+
+
+        <!--Gira Tree view-->
+        <record id="gira_view_tree" model="ir.ui.view">
+            <field name="name">gira.tree</field>
+            <field name="model">gira</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="date"/>
+                    <field name="author"/>
+                    <field name="cities"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--Gira Form view-->
+        <record id="gira_view_form" model="ir.ui.view">
+            <field name="name">gira.form</field>
+            <field name="model">gira</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group name="group_top">
+                        <group name="group_left">
+                            <field name="author"/>
+                        </group>
+                        <group name="group_right">
+                            <field name="date"/>
+                        </group>
+                    </group>
+                    <group name="group_bottom">
+                        <field name="cities"/>
+                        <field name="discs"/>
+                        <field name="top_songs"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+    </data>
+
+    <menuitem
+            id="gira_submenu"
+            name="Giras"
+            parent="gestion_musical.discos_menu_root"/>
+
+    <record id="gira_action_view" model="ir.actions.act_window">
+        <field name="name">gira.action.view</field>
+        <field name="res_model">gira</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="gira_view_tree"/>
+    </record>
+
+    <menuitem id="gira_menu_action"
+              name="Giras"
+              parent="gira_submenu"
+              action="gira_action_view"
+              sequence="0"/>
+</openerp>

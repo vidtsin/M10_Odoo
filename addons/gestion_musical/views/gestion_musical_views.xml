@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <!-- Top menu item -->
+        <!--
+            This menu item's purpose is to overwrite another one defined in
+            the base module in order to set new groups.
+        -->
+        <menuitem
+            id="discos_menu_root"
+            name="GESTION DE DISCOS"
+            web_icon="gestion_musical,static/description/icon.png"
+            sequence="6"/>
+
+        <menuitem
+            id="discos_submenu"
+            name="Discos Musicales"
+            parent="discos_menu_root"/>
+
+        <menuitem
+            id="author_submenu"
+            name="Autores"
+            parent="discos_menu_root"/>
+
+        <!-- VISTAS DEL AUTOR-->
+
+        <record id="author_view_tree" model="ir.ui.view">
+            <field name="name">author.view.tree</field>
+            <field name="model">author</field>
+            <field name="arch" type="xml">
+                <tree string="Autor">
+                    <field name="name"/>
+                    <field name="birthday"/>
+                    <field name="age"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="author_view_form" model="ir.ui.view">
+            <field name="name">author.view.form</field>
+            <field name="model">author</field>
+            <field name="arch" type="xml">
+                <form string="Autor">
+                    <group>
+                        <field name="name"/>
+                        <field name="birthday"/>
+                        <field name="age"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- VISTA DEL DISCO-->
+
+        <record id="discos_view_tree" model="ir.ui.view">
+            <field name="name">discos.view.tree</field>
+            <field name="model">disc</field>
+            <field name="arch" type="xml">
+                <tree string="Mis Discos Musicales">
+                    <field name="name"/>
+                    <field name="published_date"/>
+                    <field name="author_id"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="discos_view_form" model="ir.ui.view">
+            <field name="name">discos.view.form</field>
+            <field name="model">disc</field>
+            <field name="arch" type="xml">
+                <form string="Mis Discos Musicales">
+                    <group>
+                        <field name="name"/>
+                        <field name="published_date"/>
+                        <field name="author_id"/>
+			<field name="song_ids"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="discos_action_view" model="ir.actions.act_window">
+            <field name="name">discos.action.view</field>
+            <field name="res_model">disc</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="discos_view_tree"/>
+        </record>
+
+        <record id="author_action_view" model="ir.actions.act_window">
+            <field name="name">author.action.view</field>
+            <field name="res_model">author</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="author_view_tree"/>
+        </record>
+
+        <menuitem id="author_menu_action"
+            name="Autores de discos"
+            parent="author_submenu"
+            action="author_action_view"
+            sequence="0"/>
+
+        <menuitem id="discos_menu_action"
+            name="Mis discos musicales"
+            parent="discos_submenu"
+            action="discos_action_view"
+            sequence="0"/>
+
+
+</odoo>

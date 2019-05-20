@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': "Todo app",
+    'name': "Gestion Musical Extension",
     'author': "Óscar García",
     'version': "0.1",
-    'description': "Todo app",
+    'description': "Todo Extension",
     'data': [
         "views/gestion_musical_oscargarcia.xml",
     ],
-    "depends": ["base"],
+    "depends": ["gestion_musical"],
     'installable': True,
 }
