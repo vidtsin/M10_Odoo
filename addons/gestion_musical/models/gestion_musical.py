@@ -2,6 +2,7 @@
 
 from odoo import fields, models
 
+
 # DEFINIMOS LOS OBJETOS "DISCO", "AUTORES", "CANCIONES"
 
 class Author(models.Model):
@@ -19,17 +20,19 @@ class Disc(models.Model):
     published_date = fields.Date(string="Fecha publicación")
     author_id = fields.Many2one(comodel_name="author", string="Autor del disco")
     song_ids = fields.Many2many(comodel_name='song',
-					relation='disc_song_rel',
-					column1='disc_id',
-					column2='song_id')
+                                relation='disc_song_rel',
+                                column1='disc_id',
+                                column2='song_id')
+
 
 class Song(models.Model):
     _name = 'song'
 
     name = fields.Char(string="Nombre de la cancion", required=True)
-    duracion = fields.Integer(string="duración de la canción")
+    duration = fields.Integer(string="Duración de la canción")
     author_id = fields.Many2one(comodel_name="author", string="Autor de la cancion")
     disc_ids = fields.Many2many(comodel_name='disc',
-                                        relation='disc_song_rel',
-                                        column1='song_id',
-                                        column2='disc_id')
+                                relation='disc_song_rel',
+                                column1='song_id',
+                                column2='disc_id')
+

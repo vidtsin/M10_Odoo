@@ -87,24 +87,24 @@
                 </form>
             </field>
         </record>
-    </data>
 
-    <menuitem
+        <menuitem
             id="gira_submenu"
             name="Giras"
             parent="gestion_musical.discos_menu_root"/>
 
-    <record id="gira_action_view" model="ir.actions.act_window">
-        <field name="name">gira.action.view</field>
-        <field name="res_model">gira</field>
-        <field name="view_type">form</field>
-        <field name="view_mode">tree,form</field>
-        <field name="view_id" ref="gira_view_tree"/>
-    </record>
+        <record id="gira_action_view" model="ir.actions.act_window">
+            <field name="name">gira.action.view</field>
+            <field name="res_model">gira</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="gira_view_tree"/>
+        </record>
 
-    <menuitem id="gira_menu_action"
-              name="Giras"
-              parent="gira_submenu"
-              action="gira_action_view"
-              sequence="0"/>
+        <menuitem id="gira_menu_action"
+                  name="Giras"
+                  parent="gira_submenu"
+                  action="gira_action_view"
+                  sequence="0"/>
+    </data>
 </openerp>

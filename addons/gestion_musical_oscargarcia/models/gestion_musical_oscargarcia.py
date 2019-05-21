@@ -25,8 +25,18 @@ class DiscExtension(models.Model):
 class Gira(models.Model):
     _name = "gira"
 
-    date = fields.Date(String="Fecha")
-    author = fields.Many2one("author", "Author")
-    discs = fields.Many2many("disc", "Disc")
-    top_songs = fields.Many2many("song", "Top_songd")
-    cities = fields.Char(String="Cities")
+    date = fields.Date(string="Fecha")
+    author = fields.Many2one("author", string="Author")
+    discs = fields.Many2many(comodel_name='disc',
+                             relation='gira_discs',
+                             column1='gira_id',
+                             column2='disc_id',
+                             string="Discos")
+
+    top_songs = fields.Many2many(comodel_name='song',
+                                 relation='top_songs',
+                                 column1='gira_id',
+                                 column2='song_id',
+                                 string='Top Songs')
+
+    cities = fields.Char(string="Ciudades")

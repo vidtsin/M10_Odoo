@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8531527-3161-40a4-b7c9-836b49aaa50a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/addons/gestion_musical/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/gestion_musical/__manifest__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/gestion_musical/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/gestion_musical/models/gestion_musical.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/gestion_musical/views/gestion_musical_views.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/gestion_musical_oscargarcia/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/gestion_musical_oscargarcia/__manifest__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/gestion_musical_oscargarcia/controllers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/gestion_musical_oscargarcia/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/gestion_musical_oscargarcia/models/gestion_musical_oscargarcia.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/gestion_musical_oscargarcia/views/gestion_musical_oscargarcia.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/todo_task/Screenshot from 2019-05-13 19-49-23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/todo_task/Screenshot from 2019-05-13 19-49-39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/todo_task/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/addons/todo_task/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/todo_task_extension/Screenshot from 2019-05-13 19-44-27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/todo_task_extension/Screenshot from 2019-05-13 19-44-49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/todo_task_extension/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/addons/todo_task_extension/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/gestion_musical/models/gestion_musical.py" beforeDir="false" afterPath="$PROJECT_DIR$/addons/gestion_musical/models/gestion_musical.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/gestion_musical/views/gestion_musical_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons/gestion_musical/views/gestion_musical_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/gestion_musical_oscargarcia/models/gestion_musical_oscargarcia.py" beforeDir="false" afterPath="$PROJECT_DIR$/addons/gestion_musical_oscargarcia/models/gestion_musical_oscargarcia.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/gestion_musical_oscargarcia/views/gestion_musical_oscargarcia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons/gestion_musical_oscargarcia/views/gestion_musical_oscargarcia.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,20 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addons/todo_task/views/todo_app_view.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/addons/gestion_musical_oscargarcia/views/gestion_musical_oscargarcia.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+            <state relative-caret-position="514">
+              <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/addons/gestion_musical_oscargarcia/views/gestion_musical_oscargarcia.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/gestion_musical_oscargarcia/models/gestion_musical_oscargarcia.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
+            <state relative-caret-position="462">
+              <caret line="22" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -74,6 +61,7 @@
         <option value="$PROJECT_DIR$/addons/gestion_musical_oscargarcia/__manifest__.py" />
         <option value="$PROJECT_DIR$/addons/gestion_musical/__manifest__.py" />
         <option value="$PROJECT_DIR$/addons/gestion_musical/models/gestion_musical.py" />
+        <option value="$PROJECT_DIR$/addons/gestion_musical/views/gestion_musical_views.xml" />
         <option value="$PROJECT_DIR$/addons/gestion_musical_oscargarcia/models/gestion_musical_oscargarcia.py" />
         <option value="$PROJECT_DIR$/addons/gestion_musical_oscargarcia/views/gestion_musical_oscargarcia.xml" />
       </list>
@@ -107,26 +95,20 @@
               <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
               <item name="odoo" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="gestion_musical" type="462c0819:PsiDirectoryNode" />
+              <item name="gestion_musical_oscargarcia" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
               <item name="odoo" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="gestion_musical" type="462c0819:PsiDirectoryNode" />
+              <item name="gestion_musical_oscargarcia" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
               <item name="odoo" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="todo_task" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="odoo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="todo_task" type="462c0819:PsiDirectoryNode" />
+              <item name="gestion_musical_oscargarcia" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -136,11 +118,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/addons/gestion_musical_oscargarcia" />
     <property name="settings.editor.selected.configurable" value="BashSupport" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/addons/gestion_musical_oscargarcia" />
       <recent name="$PROJECT_DIR$/addons" />
       <recent name="$PROJECT_DIR$/addons/todo_task" />
       <recent name="$PROJECT_DIR$/addons/todo_task_extension" />
@@ -221,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557769932424</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ejercicio 4 peta">
+      <created>1558375476792</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1558375476792</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -235,14 +226,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="960" height="1016" extended-state="4" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26574174" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26360726" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32760596" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32760596" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -256,12 +246,12 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18133895" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26568267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32875144" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32760596" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -280,7 +270,8 @@
     <MESSAGE value="un commit mas" />
     <MESSAGE value="tarea 2" />
     <MESSAGE value="ejercicio 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="ejercicio 3" />
+    <MESSAGE value="ejercicio 4 peta" />
+    <option name="LAST_COMMIT_MESSAGE" value="ejercicio 4 peta" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/addons/todo_task/models/__init__.py">
@@ -325,34 +316,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/gestion_musical/nano.save">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/gestion_musical/nano.save" />
     <entry file="file://$PROJECT_DIR$/addons/gestion_musical_oscargarcia/models/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/gestion_musical_oscargarcia/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/gestion_musical/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/gestion_musical/__manifest__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/gestion_musical/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/todo_task/models/todo_app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/todo_task_extension/views/todo_app_view.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -368,38 +337,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/gestion_musical/models/gestion_musical.py">
+    <entry file="file://$PROJECT_DIR$/addons/todo_task/views/todo_app_view.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="1029">
+          <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/gestion_musical_oscargarcia/models/gestion_musical_oscargarcia.py">
+    <entry file="file://$PROJECT_DIR$/addons/todo_task/models/todo_app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        <state relative-caret-position="294">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/gestion_musical/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/gestion_musical/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/gestion_musical/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/gestion_musical/models/gestion_musical.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="27" selection-start-line="27" selection-end-line="36" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/gestion_musical/views/gestion_musical_views.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-903">
-          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="37" />
+        <state relative-caret-position="354">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/todo_task/views/todo_app_view.xml">
+    <entry file="file://$PROJECT_DIR$/addons/gestion_musical_oscargarcia/models/gestion_musical_oscargarcia.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+        <state relative-caret-position="462">
+          <caret line="22" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/gestion_musical_oscargarcia/views/gestion_musical_oscargarcia.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
+        <state relative-caret-position="514">
+          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
         </state>
       </provider>
     </entry>
