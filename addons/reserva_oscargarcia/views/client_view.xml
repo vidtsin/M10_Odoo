@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="client_view_form" model="ir.ui.view">
+            <field name="name">client.form</field>
+            <field name="model">client</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group name="group_top">
+                        <group name="group_left">
+                            <field name="name"/>
+                            <field name="dni"/>
+                        </group>
+                        <group name="group_right">
+                            <field name="birth_date"/>
+                            <field name="age"/>
+                        </group>
+                    </group>
+                    <group name="group_bottom">
+                        <field name="rooms"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="client_view_tree" model="ir.ui.view">
+            <field name="name">client.tree</field>
+            <field name="model">client</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="dni"/>
+                    <field name="birth_date"/>
+                    <field name="age"/>
+                    <field name="rooms"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="client_action_view" model="ir.actions.act_window">
+            <field name="name">client.action.view</field>
+            <field name="res_model">client</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="client_view_tree"/>
+        </record>
+
+         <menuitem
+            id="clients_submenu"
+            name="Clients"
+            parent="menu_reserva_oscargarcia"/>
+
+        <menuitem id="client_menu_action"
+                  name="Clients"
+                  parent="clients_submenu"
+                  action="client_action_view"
+                  sequence="0"/>
+    </data>
+</openerp>

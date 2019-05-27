@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="neteja_view_form" model="ir.ui.view">
+            <field name="name">neteja.form</field>
+            <field name="model">treballador.neteja</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group name="group_top">
+                        <group name="group_left">
+                            <field name="name"/>
+                        </group>
+                        <group name="group_right">
+                            <field name="dni"/>
+                            <field name="birth_date"/>
+                        </group>
+                    </group>
+                    <group name="group_bottom">
+                        <field name="rooms"/>
+                        <field name="clients"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="neteja_view_tree" model="ir.ui.view">
+            <field name="name">neteja.tree</field>
+            <field name="model">treballador.neteja</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="dni"/>
+                    <field name="birth_date"/>
+                    <field name="rooms"/>
+                    <field name="clients"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="neteja_action_view" model="ir.actions.act_window">
+            <field name="name">neteja.action.view</field>
+            <field name="res_model">treballador.neteja</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="neteja_view_tree"/>
+        </record>
+
+         <menuitem
+            id="neteja_submenu"
+            name="Neteja"
+            parent="reserva_oscargarcia.menu_reserva_oscargarcia"/>
+
+        <menuitem id="neteja_menu_action"
+                  name="Neteja"
+                  parent="neteja_submenu"
+                  action="neteja_action_view"
+                  sequence="0"/>
+    </data>
+</openerp>
